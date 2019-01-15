@@ -1,8 +1,7 @@
 ## Pandas Dataframe Comparator
 
-On one project I found out that comparison of two pandas dataframes is quite handy for test automation.
-I picked up an original idea somewhere on Internet and modified it for my needs. This class falls into a category of
-Utilities. Please, feel free to copy it, if you find it useful.
+It happened that comparison of two pandas dataframes could be quite handy for test automation.
+I picked up an original idea somewhere on Internet and modified it for my needs.
 
 The ```DfComparator``` takes two pandas dataframes and returns an empty dataframe in case if those two dataframes are equal or a
 dataframe that contains all found differences. Result dataframe has an index that identifies the location of found 
@@ -14,4 +13,4 @@ I may add tolerance functionality later. As far as I could see it needs:
 
 Apparently, if you work with static dtypes, adding tolerance for % or absolute value differences is not such a difficult task.
 
-To see how it works, please, run a unit test in ```tests``` folder.
+The code was tested with Python 3.6. To see how it works, please, run a unit test in ```tests``` folder.
